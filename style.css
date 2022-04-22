@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+@media only screen and (min-width: 992px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0 0.5em;
+  }
+  .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+    border-right: 1px solid #4d4d4d;
+    height: 18px;
+  }
+}
+
+body {
+  background-color: #fff;
+  color: #4d4d4d;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+  
+  h1{
+    font-size: 20px;
+  }
+  #bttnnnn{
+    font-size: 6px;
+  }
+}
+
+.navbar {
+  background-color: #ececec;
+}
+
+#navbarResponsive .navbar-nav li.active > a {
+  color: #d52037;
+}
+
+#bttnnnn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #d52037;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#buttonpara {
+  color: #d52037;
+}
+
+h1 {
+  position: absolute;
+  /* font-size: 48px; */
+  color: #fff;
+  font-weight: 600;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.jumbotron{
+  background-image: url("/images/banner.jpg");
+  text-align: center;
+  position: relative;
+  min-height: 444px;
+  background-size: 100% 100%;
+}
+
+.modal {
+  text-align: center;
+  
+}
+
+.modal-header {
+  text-align: center;
+  background-color: #d52037;
+  color: #fff;
+}
+
+#modalbttn {
+  background-color: #d52037;
+  color: #fff;
+}
+
+.heading {
+  font-size: 36px;
+  color: #d52037;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: underline solid black 3px;
+  text-underline-offset: 10px;
+  padding: 15px 0 30px;
+}
+
+.form-control{
+  background-color: #e4e4e4;
+}
+
+#sbtbttn {
+  background-color: #db1e36;
+  font-size: 18px;
+  font-weight: regular;
+}
+
+
+
+.page-footer {
+  font-size: 16px;
+  background-color: #cecece;
+}
+ 
