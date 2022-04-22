@@ -47,6 +47,8 @@ body {
 
 #buttonpara {
   color: #d52037;
+  text-decoration: underline solid #d52037 1px;
+  text-underline-offset: 5px;
 }
 
 h1 {
@@ -102,8 +104,6 @@ h1 {
   font-size: 18px;
   font-weight: regular;
 }
-
-
 
 .page-footer {
   font-size: 16px;
