@@ -2,11 +2,11 @@
 
 @media only screen and (min-width: 992px) {
   .navbar .navbar-nav .nav-item .nav-link {
-    padding: 0 0.5em;
+    padding: 0 1em;
   }
   .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
     border-right: 1px solid #4d4d4d;
-    height: 18px;
+    height: 27px;
   }
 }
 
