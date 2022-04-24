@@ -3,8 +3,8 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ask.com</title>
 
   <!-- Adding BOOTSTRAP using CDN -->
@@ -20,6 +20,9 @@
       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
       <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
 </head>
 <body>
 
@@ -28,10 +31,9 @@
 <header>
 
   <!-- Navigation -->
-
-
+  <div class="container">
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <div class="container">
+    
 
       <a class="navbar-brand" href="#">
         <img src="logo.png" width="92" height="70">
@@ -63,16 +65,16 @@
           </li>
         </ul>
       </div>
-    </div>
+    
   </nav>
-
+</div>
 </header>
 
 <!-- Banner -->
   <div class="jumbotron jumbotron-fluid">
-    <div class="container">
+    <div class="container-fluid">
       <h1>Welcome to our Home page</h1>
-      <button type="button" class="btn btn-light btn-lg" id= "bttnnnn" data-toggle="modal" data-target="#basicExampleModal">
+      <button type="button" class="btn btn-light btn-lg" id= "banner-button" data-toggle="modal" data-target="#basicExampleModal">
         LEARN MORE
       </button>
       <!-- Modal -->
@@ -101,103 +103,142 @@
 <!-- Section -->
 
   <div class="container">
-    <div class="row">
-        <div class="col-lg-12 heading" id="about">
-          About us 
-        </div>
-    </div>
 
-    <div class="row justify-content-center">
-      <div class="col-lg-6">
-        <iframe width="500" height="275" src="https://www.youtube.com/embed/CX8ZybaPB5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- About Us Section -->
+
+      <div class="row">
+          <div class="col-md-12 heading" id="about">
+            About us 
+          </div>
       </div>
-      <div class="col-lg-6">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio atque nesciunt pariatur accusamus consequuntur accusantium numquam, necessitatibus sunt fuga ab libero in aut delectus blanditiis, quos possimus debitis similique explicabo!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis doloribus iusto atque. Neque exercitationem unde quia rerum voluptatibus similique numquam aliquam dolorem, iusto rem illo, hic deleniti maiores iure repellat.</p>
-        <button type="button" class="btn btn-link" id= "buttonpara" data-toggle="modal" data-target="#learnmoremodal">
-          Learn More
-        </button>
-        <!-- Modal -->
-        <div class="modal fade" id="learnmoremodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">WE ARE INFINITE!</h5>
-              <buttoWn type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloremque assumenda, fuga explicabo blanditiis consequuntur vitae voluptas pariatur odio enim cupiditate porro. Optio, esse corrupti? Inventore cumque perferendis repellat mollitia!</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloremque assumenda, fuga explicabo blanditiis consequuntur vitae voluptas pariatur odio enim cupiditate porro. Optio, esse corrupti? Inventore cumque perferendis repellat mollitia!</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloremque assumenda, fuga explicabo blanditiis consequuntur vitae voluptas pariatur odio enim cupiditate porro. Optio, esse corrupti? Inventore cumque perferendis repellat mollitia!</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloremque assumenda, fuga explicabo blanditiis consequuntur vitae voluptas pariatur odio enim cupiditate porro. Optio, esse corrupti? Inventore cumque perferendis repellat mollitia!</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloremque assumenda, fuga explicabo blanditiis consequuntur vitae voluptas pariatur odio enim cupiditate porro. Optio, esse corrupti? Inventore cumque perferendis repellat mollitia!</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" id="modalbttn" data-dismiss="modal">Close</button>
+
+      <div class="row">
+
+        <!-- Youtube iFrame -->
+
+          <div class="col-md-6 ml-auto">
+            <div class="embed-responsive embed-responsive-16by9 bor">
+              <iframe width="500" height="275" src="https://www.youtube.com/embed/CX8ZybaPB5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
-        </div>
+
+        <!-- Youtube iFrame -->
+
+        <!-- About Us Content -->
+
+        <div class="col-md-6 mr-auto">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio atque nesciunt pariatur accusamus consequuntur accusantium numquam, necessitatibus sunt fuga ab libero in aut delectus blanditiis, quos possimus debitis similique explicabo!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis doloribus iusto atque. Neque exercitationem unde quia rerum voluptatibus similique numquam aliquam dolorem, iusto rem illo, hic deleniti maiores iure repellat.</p>
+          <button type="button" class="btn btn-link" id= "buttonpara" data-toggle="modal" data-target="#learnmoremodal">
+            Learn More
+          </button>
+
+          <!-- Modal -->
+
+          <div class="modal fade" id="learnmoremodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">WE ARE INFINITE!</h5>
+                  <buttoWn type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloremque assumenda, fuga explicabo blanditiis consequuntur vitae voluptas pariatur odio enim cupiditate porro. Optio, esse corrupti? Inventore cumque perferendis repellat mollitia!</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloremque assumenda, fuga explicabo blanditiis consequuntur vitae voluptas pariatur odio enim cupiditate porro. Optio, esse corrupti? Inventore cumque perferendis repellat mollitia!</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloremque assumenda, fuga explicabo blanditiis consequuntur vitae voluptas pariatur odio enim cupiditate porro. Optio, esse corrupti? Inventore cumque perferendis repellat mollitia!</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloremque assumenda, fuga explicabo blanditiis consequuntur vitae voluptas pariatur odio enim cupiditate porro. Optio, esse corrupti? Inventore cumque perferendis repellat mollitia!</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloremque assumenda, fuga explicabo blanditiis consequuntur vitae voluptas pariatur odio enim cupiditate porro. Optio, esse corrupti? Inventore cumque perferendis repellat mollitia!</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" id="modalbttn" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Modal -->
         </div>
 
-      </div>
-    </div>
+        <!-- About Us Content -->
 
+      </div>
 
-    <div class="row">
-      <div class="col heading" id="cnct">
-        Contact Us
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-lg-6 theform">
-      <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Name</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Please enter your name">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Please enter your email">
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary mb-3" id="sbtbttn">Submit</button>
-        </form>
-      </div>
-      <div class="col-lg-6">
-        <div class="container">
-          <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=koko%20crater&t=&z=13&ie=UTF8&iwloc=&output=embed"  style="border-radius: 12px; border:2px solid #d53037" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><style>.mapouter{position:relative;text-align:right;height:286px;width:565px;}.gmap_canvas {overflow:hidden;background:none!important;height:286px;width:565px;}</style></div></div>
+    <!-- Contact Us Section -->
+
+      <div class="row">
+        <div class="col heading" id="cnct">
+          Contact Us
         </div>
       </div>
-    </div>
+
+      <div class="row justify-content-center">
+
+        <!-- Form -->
+
+          <div class="col-lg-6 theform">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Name</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Please enter your name">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Please enter your email">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary mb-3" id="sbtbttn">Submit</button>
+            </form>
+          </div>
+
+        <!-- Form -->
+
+        <!-- Google Maps -->
+
+          <div class="col-lg-6">
+            <div class="container">
+              <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=koko%20crater&t=&z=13&ie=UTF8&iwloc=&output=embed"  style="border-radius: 12px; border:2px solid #d53037" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><style>.mapouter{position:relative;text-align:right;height:286px;width:565px;}.gmap_canvas {overflow:hidden;background:none!important;height:286px;width:565px;}</style></div></div>
+            </div>
+          </div>
+
+        <!-- Google Maps -->
+      </div>
+
+    <!-- Contact Us -->
   
   </div>
 
-<!-- Footer -->
-<footer class="page-footer">
+<!-- Section -->
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">Copyright 2022 by
-    <a href="#">Ask.com</a>. All Rights Reserved.
-  </div>
-  <!-- Copyright -->
-
-</footer>
 <!-- Footer -->
+  <footer class="page-footer">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">Copyright 2022 by
+      <a href="#">Ask.com</a>. All Rights Reserved.
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+<!-- Footer -->
+
+<!-- JavaScript code for active class -->
   
-<script>
-  $( '#navbarResponsive .navbar-nav a' ).on('click', 
-              function () {
-      $( '#topheader .navbar-nav' ).find( 'li.active' )
-      .removeClass( 'active' );
-      $( this ).parent( 'li' ).addClass( 'active' );
-  });
-</script>
+  <script>
+    $( '#navbarResponsive .navbar-nav a' ).on('click', 
+                function () {
+        $( '#navbarResponsive .navbar-nav' ).find( 'li.active' )
+        .removeClass( 'active' );
+        $( this ).parent( 'li' ).addClass( 'active' );
+    });
+  </script>
+
+<!-- Bootstrap code for jQuery and JS -->
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

@@ -10,6 +10,22 @@
   }
 }
 
+header {
+  background-color :#ececec;
+  padding-top:15px;
+  padding-bottom: 15px;
+}
+
+@media screen and (max-width:992px) {
+  h1 {
+    font-size: 50px !important;
+  }
+  #banner-button {
+    font-size: 20px !important;
+  }
+}
+
+
 body {
   background-color: #fff;
   color: #4d4d4d;
@@ -17,25 +33,24 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-@media (min-width: 300px) and (max-width: 600px) {
-  
-  h1{
-    font-size: 20px;
-  }
-  #bttnnnn{
-    font-size: 6px;
-  }
+/* .navbar {
+  background-color: #ececec;
+} */
+
+#navbarResponsive .navbar-nav li > a {
+  color: #4d4d4d;
 }
 
-.navbar {
-  background-color: #ececec;
+#navbarResponsive .navbar-nav li > a:hover, 
+#navbarResponsive .navbar-nav li > a:focus {
+  color: #d52037;
 }
 
 #navbarResponsive .navbar-nav li.active > a {
   color: #d52037;
 }
 
-#bttnnnn {
+#banner-button {
   position: absolute;
   top: 70%;
   left: 50%;
@@ -53,7 +68,7 @@ body {
 
 h1 {
   position: absolute;
-  /* font-size: 48px; */
+  font-size: 48px;
   color: #fff;
   font-weight: 600;
   top: 40%;
