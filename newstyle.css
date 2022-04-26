@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-
 @media only screen and (min-width: 992px) {
   .navbar .navbar-nav .nav-item .nav-link {
     padding: 0 1em;
@@ -158,6 +156,7 @@
 #navbarResponsive .navbar-nav li > a:focus {
   color: #d52037;
 }
+
 
 #navbarResponsive .navbar-nav li.active > a {
   color: #d52037;
