@@ -245,16 +245,16 @@ form button {
   padding: 10px 50px;
 }
 .error input {
-  border: 3px red solid;
+  border: 1px red solid;
 }
 .error textarea {
-  border: 3px red solid;
+  border: 1px red solid;
 }
 .success input {
-  border: 3px green solid;
+  border: 1px green solid;
 }
 .success textarea {
-  border: 3px green solid;
+  border: 1px green solid;
 }
 .form-group span {
   font-size: 15px;
